@@ -12,13 +12,36 @@
       <a>
         <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
       </a>
-      <ul>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="delivary-payment.html">Доставка и оплата</a></li>
-        <li><a href="about.html">О Компании</a></li>
-      </ul>
+      <div class="">
+        <label for="catalog">Каталог</label>
+        <select id="catalog" name="catalog">
+          <optgroup label="Новинки">
+            <option value="creamy">Сливочное</option>
+            <option value="sherbets">Щербеты</option>
+            <option value="fruitice">Фруктовый лед</option>
+            <option value="melorin">Мелорин</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <p><a href="delivary-payment.html">Доставка и оплата</a></p>
+      <p><a href="about.html">О Компании</a></p>
+
       <p><button type="button">Поиск</button></p>
-      <p><button type="button">Войти</button></p>
+      <input type="search" name="search" id="search">
+      <p><a href="login.html">Вход</a></p>
+      <section>
+        <h2>Личный кабинет</h2>
+        <form action="https://htmlacademy.ru" method="post">
+          <p><input type="email" name="email" placeholder="Электронная почта" required></p>
+          <p><input type="password" name="password" placeholder="Пароль" required></p>
+          <button type="submit" name="button">Войти</button>
+          <p>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </p>
+        </form>
+      </section>
       <p><button type="button">Корзина</button></p>
     </nav>
   </header>
@@ -79,6 +102,15 @@
       </div>
     </section>
     <section>
+      <form>
+        <h2>Мы обязательно ответим!</h2>
+        <p><input type="text" name="yourname" value="" placeholder="Как вас зовут?"></p>
+        <p><input type="email" name="email" placeholder="Ваша почта для ответа?" required></p>
+        <p><input type="text" name="comment" placeholder="Напишите что-нибудь..."></p>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
+    <section>
       <div>
         <h2>Преимущества</h2>
         <p>
@@ -108,7 +140,7 @@
       <div>
         <h2>Подписка</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!-- Здесь будет форма -->
+        <p><input type="password" name="password" placeholder="Пароль" required></p>
         <button type="button">Отправить</button>
       </div>
     </section>
