@@ -12,29 +12,29 @@
       <a>
         <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
       </a>
-      <ul>
-        <li><a href="catalog.html">Каталог</a></li>
+
+      <ul class="main-menu">
+        <li><a href="catalog.html">Каталог</a>
+          <ul class="sub-menu">
+            <li><a href="#1">Сливочное</a></li>
+            <li><a href="#2">Щербеты</a></li>
+            <li><a href="#3">Фруктовый лед</a></li>
+            <li><a href="#3">Мелорин</a></li>
+          </ul>
+        </li>
         <li><a href="delivary-payment.html">Доставка и оплата</a></li>
         <li><a href="about.html">О компании</a></li>
       </ul>
-      <!--
-      <div class="">
-        <label for="catalog">Каталог</label>
-        <select id="catalog" name="catalog">
-          <optgroup label="Новинки">
-            <option value="creamy">Сливочное</option>
-            <option value="fruitice">Фруктовый лед</option>
-            <option value="melorin">Мелорин</option>
-          </optgroup>
-        </select>
-      </div>
-    -->
 
-      <p><button type="button">Поиск</button></p>
-      <input type="search" name="search" id="search">
-      <p><a href="login.html">Вход</a></p>
-      <section>
-        <h2>Личный кабинет</h2>
+      <form action="https://echo.htmlacademy.ru" method="get" class="search">
+        <button type="button">Поиск</button>
+        <input type="search" name="search" id="search">
+        <input type="submit" name="button" value="Отправить" class="visually-hidden">
+      </form>
+
+      <div class="entrance">
+        <p><a href="login.html">Вход</a></p>
+        <p>Личный кабинет</p>
         <form action="https://echo.htmlacademy.ru" method="post">
           <p><input type="email" name="email" placeholder="Электронная почта" required></p>
           <p><input type="password" name="password" placeholder="Пароль" required></p>
@@ -44,7 +44,7 @@
             <a href="#">Новая регистрация</a>
           </p>
         </form>
-      </section>
+      </div>
       <p><button type="button">Корзина</button></p>
     </nav>
   </header>
@@ -105,16 +105,6 @@
       </div>
     </section>
 
-    <section>
-      <h2>Мы обязательно ответим!</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <input type="text" name="yourname" value="" placeholder="Как вас зовут?">
-        <input type="email" name="email" placeholder="Ваша почта для ответа?" required>
-        <textarea name="comment" id="comment-field" rows="5" placeholder="Напишите что-нибудь..."></textarea>
-        <input type="submit" value="Отправить">
-      </form>
-      <button type="button">Закрыть</button>
-    </section>
 
     <section>
       <div>
@@ -146,9 +136,9 @@
       <div>
         <h2>Подписка</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post" class="email">
           <input type="email" name="email" placeholder="Электронная почта" required>
-          <button type="button">Отправить</button>
+          <button type="submit">Отправить</button>
         </form>
       </div>
     </section>
@@ -185,6 +175,16 @@
       </p>
     </section>
   </footer>
+  <section>
+    <h2>Мы обязательно ответим!</h2>
+    <form action="https://echo.htmlacademy.ru" method="post" class="fidback">
+      <input type="text" name="yourname" value="" placeholder="Как вас зовут?">
+      <input type="email" name="email" placeholder="Ваша почта для ответа?" required>
+      <textarea name="comment" id="comment-field" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+      <input type="submit" value="Отправить">
+    </form>
+    <button type="button">Закрыть</button>
+  </section>
 </body>
 
 </html>
