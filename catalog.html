@@ -12,28 +12,125 @@
       <a>
         <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
       </a>
-      <ul>
-        <li><a href="catalog.html">Каталог</a></li>
+
+      <ul class="main-menu">
+        <li><a href="catalog.html">Каталог</a>
+          <ul class="sub-menu">
+            <li><a href="#1">Сливочное</a></li>
+            <li><a href="#2">Щербеты</a></li>
+            <li><a href="#3">Фруктовый лед</a></li>
+            <li><a href="#3">Мелорин</a></li>
+          </ul>
+        </li>
         <li><a href="delivary-payment.html">Доставка и оплата</a></li>
-        <li><a href="about.html">О Компании</a></li>
+        <li><a href="about.html">О компании</a></li>
       </ul>
-      <p><button type="button">Поиск</button></p>
-      <p><button type="button">Войти</button></p>
-      <p><button type="button">Корзина</button></p>
+
+      <div>
+        <button type="button">Поиск</button>
+        <form action="https://echo.htmlacademy.ru" method="get" class="search">
+          <input type="search" name="search" id="search">
+          <input type="submit" value="Отправить" class="visually-hidden">
+        </form>
+      </div>
+
+      <div class="entrance">
+        <p><a href="login.html">Вход</a></p>
+        <h2>Личный кабинет</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p><input type="email" name="email" placeholder="Электронная почта" required></p>
+          <p><input type="password" name="password" placeholder="Пароль" required></p>
+          <button type="submit">Войти</button>
+          <p>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </p>
+        </form>
+      </div>
+
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="basket">
+          <button type="button">Корзина</button>
+          <div class="ice cream basket">
+            <button type="button">Закрыть</button>
+            <a href=""><img src="img/basket-ice-cream-with-jam.jpg" alt="Пломбир с апельсиновым джемом">Пломбир с апельсиновым джемом</a>
+            <p>1,5 кг х 200 руб.</p>
+            <p>300 руб.</p>
+          </div>
+          <div class="strawberry basket">
+            <button type="button">Закрыть</button>
+            <a href=""><img src="img/basket-strawberry.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада">Клубничный пломбир с присыпкой из белого шоколада</a>
+            <p>1,5 кг х 300 руб.</p>
+            <p>450 руб.</p>
+          </div>
+          <div class=""><span>Итого: 750 руб.</span></div>
+          <input type="submit" value="Оформить заказ">
+        </div>
+      </form>
 
     </nav>
   </header>
   <main>
     <h1>Сливочное мороженое</h1>
-    <ul>
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li>Сливочное</li>
-    </ul>
-    <p>С 10 до 20, ежедневно 8 812 450-25-25</p>
-    <!-- Здесь будет форма -->
+    <div class="breadcrumbs">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="active">Сливочное</a>
+    </div>
 
-    <input type="submit" value="Применить">
+    <p>С 10 до 20, ежедневно 8 812 450-25-25</p>
+
+    <form class="" action="https://echo.htmlacademy.ru" method="get">
+      <div class="">
+        <p>Сортировка:</p>
+        <select name="sorting">
+          <option value="по популярности">по популярности</option>
+        </select>
+      </div>
+
+      <div class="">
+        <label for="price">Цена 100руб. - 500руб.</label>
+        <input type="range" id="price" min="100" max="500">
+      </div>
+
+      <div class="">
+        <p>Жирность</p>
+        <input type="radio" id="fat0" name="fat-content" value="0%">
+        <label for="fat0">0%</label>
+
+        <input type="radio" id="fat-before-10" name="fat-content" value="до 10%" checked>
+        <label for="fat-before-10">до 10%</label>
+
+        <input type="radio" id="fat-before-30" name="fat-content" value="до 30%">
+        <label for="fat-before-30">до 30%</label>
+
+        <input type="radio" id="fat-before-above30" name="fat-content" value="выше 30%">
+        <label for="fat-before-above30">выше 30%</label>
+      </div>
+
+      <div class="">
+        <p>Наполнители:</p>
+        <input type="checkbox" name="chocolate" id="chocolate-supplement" value="шоколадные" checked>
+        <label for="chocolate-supplement">шоколадные</label>
+
+        <input type="checkbox" name="sugar-powders" id="sugar-supplement" value="сахарные присыпки" checked>
+        <label for="sugar-supplement">сахарные присыпки</label>
+
+        <input type="checkbox" name="fruits" id="fruits-supplement" value="фрукты">
+        <label for="fruits-supplement">фрукты</label>
+
+        <input type="checkbox" name="syrups" id="syrups-supplement" value="сиропы">
+        <label for="syrups-supplement">сиропы</label>
+
+        <input type="checkbox" name="jams" id="jams-supplement" value="джемы">
+        <label for="jams-supplement">сиропы</label>
+      </div>
+
+      <div class="">
+        <input type="submit" value="Применить">
+      </div>
+    </form>
+
     <section>
       <h2 class="catalog-item">Карточки товара</h2>
       <div>
@@ -108,14 +205,13 @@
         <h3><a href="">Сливочное с мятным сиропом</a></h3>
       </div>
     </section>
-    <div>
-      <ul class="bread-crumbs">
-        <li>1</li>
-        <li><a href="">2</a></li>
-        <li><a href="">3</a></li>
-        <li><a href="">4</a></li>
-        <li><a href="">5</a></li>
-      </ul>
+
+    <div class="paginator">
+      <a class="current" href="#1">1</a>
+      <a href="#2">2</a>
+      <a href="#3">3</a>
+      <a href="#4">4</a>
+      <a href="#5">5</a>
     </div>
   </main>
 
