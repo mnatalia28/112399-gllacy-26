@@ -16,10 +16,11 @@
       <ul class="main-menu">
         <li><a href="catalog.html">Каталог</a>
           <ul class="sub-menu">
-            <li><a href="#1">Сливочное</a></li>
-            <li><a href="#2">Щербеты</a></li>
-            <li><a href="#3">Фруктовый лед</a></li>
-            <li><a href="#3">Мелорин</a></li>
+            <li><a href="#1">Новинки</a></li>
+            <li><a href="#2">Сливочное</a></li>
+            <li><a href="#3">Щербеты</a></li>
+            <li><a href="#4">Фруктовый лед</a></li>
+            <li><a href="#5">Мелорин</a></li>
           </ul>
         </li>
         <li><a href="delivary-payment.html">Доставка и оплата</a></li>
@@ -48,52 +49,60 @@
         </form>
       </div>
 
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <div class="basket">
-          <button type="button">Корзина</button>
-          <div class="ice cream basket">
-            <button type="button">Закрыть</button>
-            <a href=""><img src="img/basket-ice-cream-with-jam.jpg" alt="Пломбир с апельсиновым джемом">Пломбир с апельсиновым джемом</a>
-            <p>1,5 кг х 200 руб.</p>
-            <p>300 руб.</p>
+      <div class="basket">
+        <button type="button">2 товара</button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="items-basket">
+            <div class="ice-cream-basket">
+              <button type="button">Закрыть</button>
+              <a href=""><img src="img/basket-ice-cream-with-jam.jpg" alt="Пломбир с апельсиновым джемом">Пломбир с апельсиновым джемом</a>
+              <p>1,5 кг х 200 руб.</p>
+              <p>300 руб.</p>
+            </div>
+
+            <div class="strawberry-basket">
+              <button type="button">Закрыть</button>
+              <a href=""><img src="img/basket-strawberry.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада">Клубничный пломбир с присыпкой из белого шоколада</a>
+              <p>1,5 кг х 300 руб.</p>
+              <p>450 руб.</p>
+            </div>
+
+            <div class="total-amount"><span>Итого: 750 руб.</span></div>
+            <input type="submit" value="Оформить заказ">
           </div>
-          <div class="strawberry basket">
-            <button type="button">Закрыть</button>
-            <a href=""><img src="img/basket-strawberry.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада">Клубничный пломбир с присыпкой из белого шоколада</a>
-            <p>1,5 кг х 300 руб.</p>
-            <p>450 руб.</p>
-          </div>
-          <div class=""><span>Итого: 750 руб.</span></div>
-          <input type="submit" value="Оформить заказ">
-        </div>
-      </form>
+        </form>
+      </div>
 
     </nav>
   </header>
+
   <main>
     <h1>Сливочное мороженое</h1>
     <div class="breadcrumbs">
       <a href="index.html">Главная</a>
       <a href="catalog.html">Каталог</a>
-      <a href="active">Сливочное</a>
+      <span>Сливочное</span>
     </div>
 
     <p>С 10 до 20, ежедневно 8 812 450-25-25</p>
 
-    <form class="" action="https://echo.htmlacademy.ru" method="get">
-      <div class="">
+    <form class="panel-sort-filter" action="https://echo.htmlacademy.ru" method="get">
+      <div class="sort-section">
         <p>Сортировка:</p>
         <select name="sorting">
           <option value="по популярности">по популярности</option>
+          <option value="сначала недорогие">сначала недорогие</option>
+          <option value="сначала дорогие">сначала дорогие</option>
+          <option value="по жирности">по жирности</option>
         </select>
       </div>
 
-      <div class="">
+      <div class="range-price-section">
         <label for="price">Цена 100руб. - 500руб.</label>
         <input type="range" id="price" min="100" max="500">
       </div>
 
-      <div class="">
+      <div class="fat-product-section">
         <p>Жирность</p>
         <input type="radio" id="fat0" name="fat-content" value="0%">
         <label for="fat0">0%</label>
@@ -108,7 +117,7 @@
         <label for="fat-before-above30">выше 30%</label>
       </div>
 
-      <div class="">
+      <div class="fillers-section">
         <p>Наполнители:</p>
         <input type="checkbox" name="chocolate" id="chocolate-supplement" value="шоколадные" checked>
         <label for="chocolate-supplement">шоколадные</label>
@@ -126,7 +135,7 @@
         <label for="jams-supplement">сиропы</label>
       </div>
 
-      <div class="">
+      <div class="apply-selected">
         <input type="submit" value="Применить">
       </div>
     </form>
@@ -207,11 +216,13 @@
     </section>
 
     <div class="paginator">
+      <a href="">назад</a>
       <a class="current" href="#1">1</a>
       <a href="#2">2</a>
       <a href="#3">3</a>
       <a href="#4">4</a>
       <a href="#5">5</a>
+      <a href="">вперед</a>
     </div>
   </main>
 
