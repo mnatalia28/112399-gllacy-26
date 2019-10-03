@@ -4,11 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <nav>
+    <nav class="main-navigation">
       <a>
         <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
       </a>
@@ -27,9 +30,9 @@
         <li><a href="about.html">О компании</a></li>
       </ul>
 
-      <div>
-        <button type="button">Поиск</button>
-        <form action="https://echo.htmlacademy.ru" method="get" class="search">
+      <div class="search">
+        <button type="button" class="button-search">Поиск</button>
+        <form action="https://echo.htmlacademy.ru" method="get" class="form-search">
           <input type="search" name="search" id="search">
           <input type="submit" value="Отправить" class="visually-hidden">
         </form>
@@ -41,7 +44,7 @@
         <form action="https://echo.htmlacademy.ru" method="post">
           <p><input type="email" name="email" placeholder="Электронная почта" required></p>
           <p><input type="password" name="password" placeholder="Пароль" required></p>
-          <button type="submit">Войти</button>
+          <button type="submit" class="button-entrance">Войти</button>
           <p>
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
@@ -140,8 +143,8 @@
       </div>
     </form>
 
-    <section>
-      <h2 class="catalog-item">Карточки товара</h2>
+    <section class="catalog-item">
+      <h2 class="visually-hidden">Карточки товара</h2>
       <div>
         <img src="img/first-row-one.jpg" width="267" height="267" class="round" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
         <p>310<img src="img/ruble.svg" width="31" height="36" alt="Рубль">/кг</p>
