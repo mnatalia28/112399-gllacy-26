@@ -20,36 +20,51 @@ body {
   list-style: none;
 }
 
-.main-menu a,
-.sub-menu a {
+.nav-main-menu {
   color: #ffffff;
+  text-decoration: none;
 }
 
-.main-menu a:hover,
-.main-menu a:focus,
-.sub-menu a:hover,
-.sub-menu a:focus {
+.nav-main-menu:link {
+  color: #ffffff;
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-main-menu:hover,
+.nav-main-menu:focus {
   background-color: #EDEDED;
   color: #323232;
 }
 
-.button-search {
+.nav-sub-menu {
+  color: #2E2E2E;
+  text-decoration: none;
+}
+
+.nav-sub-menu:hover,
+.nav-sub-menu:focus {
+  background-color: #FFE5E0;
+  color: #2E2E2E;
+}
+
+.nav-sub-menu:active {
+  background-color: #EA7056;
+  color: #2E2E2E;
+}
+
+.button-search,
+.login-entrance,
+.button-basket  {
   background-color: #9AB5AA;
   color: #ffffff;
 }
 
-.login-entrance {
-  background-color: #9AB5AA;
-  color: #ffffff;
-}
-
-.button-basket {
-  background-color: #9AB5AA;
-  color: #ffffff;
-}
-
-h1 {
-  visibility: hidden;
+.login-entrance,
+.button-basket  {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 32px;
 }
 
 .cream-index a {
@@ -81,27 +96,24 @@ h1 {
   color: #ffffff;
 }
 
-.raspberry-gift a,
-.choco-gift a {
+.gift a {
     background-color: #FF633D;
 }
 
-.raspberry-gift {
+.gift {
   background-color: #849D8F;
-  background-image: url("../img/raspberry-background.jpg");
-  background-repeat: no-repeat;
   width: 560px;
   height: 230px;
   border-radius: 15px;
+  background-repeat: no-repeat;
+}
+
+.raspberry-gift {
+  background-image: url("../img/raspberry-background.jpg");
 }
 
 .choco-gift {
-  background-color: #849D8F;
   background-image: url("../img/chocolate-background.jpg");
-  background-repeat: no-repeat;
-  width: 560px;
-  height: 230px;
-  border-radius: 15px;
 }
 
 .for-nothing {
@@ -111,27 +123,30 @@ h1 {
   color: #ffffff;
 }
 
-.raspberry-gift p,
-.choco-gift p {
+.gift p {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
 }
 
-.raspberry-gift a,
-.choco-gift a {
+.button-red {
+  background-color: #FD5535;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
+  text-decoration: none;
 }
 
-.raspberry-gift a:hover,
-.raspberry-gift a:focus,
-.choco-gift a:hover,
-.choco-gift a:focus {
+.button-red:hover,
+.button-red:focus {
   background-color: #FF7B62;
+  color: #ffffff;
+}
+
+.button-red:active {
+  background-color: #FD5535;
   color: #ffffff;
 }
 
@@ -140,12 +155,20 @@ h1 {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
+  text-decoration: none;
+}
+
+.catalog-item a:link {
+color: #ffffff;
+border-bottom: 1px solid;
+border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 
 .catalog-item a:hover,
 .catalog-item a:focus,
 .catalog-item a:active {
   color: #FFCCB4;
+  border-bottom-color: rgba(255, 189, 158, 0.2);
 }
 
 .round {
@@ -171,14 +194,14 @@ h1 {
 }
 
 .advantages p {
-  font-weight: medium;
+  font-weight: 500;
   font-size: 24px;
   line-height: 30px;
 }
 
 .list-of-benefits {
   list-style: none;
-  font-weight: regular;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
 }
@@ -195,7 +218,7 @@ h1 {
 
 .news-block h2 {
   color: #2E2E2E;
-  font-weight: medium;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
 }
@@ -215,10 +238,7 @@ h1 {
 
 .email-block {
   color: #5F5F5F;
-  font-weight: regular;
-  font-size: 16px;
-  line-height: 22px;
-
+  font-weight: 500;
   background-color: #849D8F;
   background-image: url("../img/bg-post.svg");
   background-repeat: no-repeat;
@@ -226,25 +246,14 @@ h1 {
   height: 230px;
   border-radius: 15px;
 }
-.send,
-.feedback-button {
-  color: #ffffff;
-  background-color: #FF633D;
+
+.email-block p {
+  color: #5F5F5F;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
 }
 
-.send:hover,
-.send:focus,
-.feedback-button:hover,
-.feedback-button:focus {
-  background-color: #FF7B62;
-  color: #ffffff;
-}
-
-.send:active,
-.feedback-button:active {
-  background-color: #FB5133;
-  color: #ffffff;
-}
 
 /*
 .map-adress{
@@ -283,7 +292,7 @@ h1 {
 
 .useful-about-us {
   font: inherit;
-  font-weight: regular;
+  font-weight: 500;
   font-size: 13px;
   line-height: 18px;
 }

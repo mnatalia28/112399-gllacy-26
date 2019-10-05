@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -17,17 +17,17 @@
       </a>
 
       <ul class="main-menu">
-        <li><a href="catalog.html">Каталог</a>
+        <li><a class="nav-main-menu" href="catalog.html">Каталог</a>
           <ul class="sub-menu">
-            <li><a href="#1">Новинки</a></li>
-            <li><a href="#2">Сливочное</a></li>
-            <li><a href="#3">Щербеты</a></li>
-            <li><a href="#4">Фруктовый лед</a></li>
-            <li><a href="#5">Мелорин</a></li>
+            <li><a class="nav-sub-menu" href="#1">Новинки</a></li>
+            <li><a class="nav-sub-menu" href="#2">Сливочное</a></li>
+            <li><a class="nav-sub-menu" href="#3">Щербеты</a></li>
+            <li><a class="nav-sub-menu" href="#4">Фруктовый лед</a></li>
+            <li><a class="nav-sub-menu" href="#5">Мелорин</a></li>
           </ul>
         </li>
-        <li><a href="delivary-payment.html">Доставка и оплата</a></li>
-        <li><a href="about.html">О компании</a></li>
+        <li><a class="nav-main-menu" href="delivary-payment.html">Доставка и оплата</a></li>
+        <li><a class="nav-main-menu" href="about.html">О компании</a></li>
       </ul>
 
       <div class="search">
@@ -51,39 +51,43 @@
           </p>
         </form>
       </div>
-      <p><button type="button" class="button-basket">Корзина</button></p>
+      <p><button type="button" class="button-basket">Пусто</button></p>
     </nav>
   </header>
   <main>
-    <h1 class="visually-hidden">Магазин «Глэйси»</h1>
+    <h1>Магазин «Глэйси»</h1>
     <p>С 10 до 20, ежедневно 8 812 450-25-25</p>
     <section class="cream-index">
       <div>
         <img src="img/cream-brule.png" alt="Крем-брюле и пломбир с малиновым джемом">
         <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-        <a href="">Давайте оба!</a>
+        <a href="" class="button-red">Давайте оба!</a>
       </div>
       <div>
         <img src="img/chocolade-lemon.png" alt="Шоколадный пломбир и лимонный сорбет">
         <h2>Шоколадный пломбир и лимонный сорбет</h2>
-        <a href="">Давайте оба!</a>
+        <a href="" class="button-red">Давайте оба!</a>
       </div>
       <div>
         <img src="img/plombir-pomadka.png" alt="Пломбир с помадкой и клубничный щербет">
         <h2>Пломбир с помадкой и клубничный щербет</h2>
-        <a href="">Давайте оба!</a>
+        <a href="" class="button-red">Давайте оба!</a>
       </div>
     </section>
-    <article class="raspberry-gift">
+
+
+    <article class="gift raspberry-gift">
       <h2 class="for-nothing">Малинка даром!</h2>
       <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-      <a href="">Хочу варенье!</a>
+      <a href="" class="button-red">Хочу варенье!</a>
     </article>
-    <article class="choco-gift">
+    <article class="gift choco-gift">
       <h2 class="for-nothing">Шоколадки даром!</h2>
       <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-      <a href="">Хочу шоколадки!</a>
+      <a href="" class="button-red">Хочу шоколадки!</a>
     </article>
+
+
     <section class="catalog-item">
       <h2 class="visually-hidden">Карточки товара</h2>
       <div>
@@ -144,7 +148,7 @@
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form action="https://echo.htmlacademy.ru" method="post" class="email">
           <input type="email" name="email" placeholder="Электронная почта" required>
-          <button class="send" type="submit">Отправить</button>
+          <button type="submit" class="button-red">Отправить</button>
         </form>
       </div>
     </section>
@@ -155,7 +159,7 @@
       <div>
         <p>Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
         <p>Для заказов по телефону: 8 812 450-25-25 (с 10 до 20 ежедневно)</p>
-        <button type="button" class="feedback-button">Форма обратной связи</button>
+        <button type="button" class="button-red">Форма обратной связи</button>
       </div>
     </section>
   </main>
