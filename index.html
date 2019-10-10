@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -17,10 +17,10 @@
       </a>
 
       <ul class="main-menu">
-        <li><a class="nav-main-menu" href="catalog.html">Каталог</a>
+        <li><a class="nav-main-menu">Каталог</a>
           <ul class="sub-menu">
-            <li><a class="nav-sub-menu" href="#1">Новинки</a></li>
-            <li><a class="nav-sub-menu" href="#2">Сливочное</a></li>
+            <li><a class="nav-sub-menu" href="#1"><span>Новинки</span></a></li>
+            <li><a class="nav-sub-menu" href="catalog.html">Сливочное</a></li>
             <li><a class="nav-sub-menu" href="#3">Щербеты</a></li>
             <li><a class="nav-sub-menu" href="#4">Фруктовый лед</a></li>
             <li><a class="nav-sub-menu" href="#5">Мелорин</a></li>
@@ -53,10 +53,14 @@
       </div>
       <p><button type="button" class="button-basket">Пусто</button></p>
     </nav>
+    <div class="daily-phone">
+      <p class="daily">С 10 до 20, ежедневно</p>
+      <p class="phone">8 812 450-25-25</p>
+    </div>
   </header>
+
   <main>
-    <h1>Магазин «Глэйси»</h1>
-    <p>С 10 до 20, ежедневно 8 812 450-25-25</p>
+    <h1 class="visually-hidden">Магазин «Глэйси»</h1>
     <section class="cream-index">
       <div>
         <img src="img/cream-brule.png" alt="Крем-брюле и пломбир с малиновым джемом">
@@ -79,38 +83,38 @@
     <article class="gift raspberry-gift">
       <h2 class="for-nothing">Малинка даром!</h2>
       <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-      <a href="" class="button-red">Хочу варенье!</a>
+      <a href="" class="button-red button-gift">Хочу варенье!</a>
     </article>
     <article class="gift choco-gift">
       <h2 class="for-nothing">Шоколадки даром!</h2>
       <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-      <a href="" class="button-red">Хочу шоколадки!</a>
+      <a href="" class="button-red button-gift">Хочу шоколадки!</a>
     </article>
 
 
-    <section class="catalog-item">
+    <section class="catalog-item-section">
       <h2 class="visually-hidden">Карточки товара</h2>
-      <div>
+      <div class="catalog-item">
         <img src="img/first-row-one.jpg" width="267" height="267" class="round" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-        <p>310<img src="img/ruble.svg" width="31" height="36" alt="Рубль">/кг</p>
+        <p class="price">310<img src="img/ruble.svg" width="31" height="36" alt="Рубль"><span>/кг</span></p>
         <h3><a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
       </div>
 
-      <div>
+      <div class="catalog-item">
         <img src="img/first-row-two.jpg" width="267" height="267" class="round" alt="Сливочно-кофейное с кусочками шоколада">
-        <p>380<img src="img/ruble.svg" width="31" height="36" alt="Рубль">/кг</p>
+        <p class="price">380<img src="img/ruble.svg" width="31" height="36" alt="Рубль"><span>/кг</span></p>
         <h3><a href="">Сливочно-кофейное с кусочками шоколада</a></h3>
       </div>
 
-      <div>
+      <div class="catalog-item">
         <img src="img/first-row-three.jpg" width="267" height="267" class="round" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-        <p>355<img src="img/ruble.svg" width="31" height="36" alt="Рубль">/кг</p>
+        <p class="price">355<img src="img/ruble.svg" width="31" height="36" alt="Рубль"><span>/кг</span></p>
         <h3><a href="">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
       </div>
 
-      <div>
+      <div class="catalog-item">
         <img src="img/first-row-four.jpg" width="267" height="267" class="round" alt="Сливочное крем-брюле с карамельной подливкой">
-        <p>415<img src="img/ruble.svg" width="31" height="36" alt="Рубль">/кг</p>
+        <p class="price">415<img src="img/ruble.svg" width="31" height="36" alt="Рубль"><span>/кг</span></p>
         <h3><a href="">Сливочное крем-брюле с карамельной подливкой</a></h3>
       </div>
     </section>
@@ -148,7 +152,7 @@
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form action="https://echo.htmlacademy.ru" method="post" class="email">
           <input type="email" name="email" placeholder="Электронная почта" required>
-          <button type="submit" class="button-red">Отправить</button>
+          <button type="submit" class="button-red button-gift">Отправить</button>
         </form>
       </div>
     </section>
@@ -159,7 +163,7 @@
       <div>
         <p>Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
         <p>Для заказов по телефону: 8 812 450-25-25 (с 10 до 20 ежедневно)</p>
-        <button type="button" class="button-red">Форма обратной связи</button>
+        <button type="button" class="button-red button-gift">Форма обратной связи</button>
       </div>
     </section>
   </main>
@@ -175,7 +179,7 @@
     </div>
     <section class="useful">
       <h2 class="visually-hidden">Полезное</h2>
-      <a class="useful-suppliers" href="">Для поставщиков</a>
+      <a class="useful-about-us suppliers" href="">Для поставщиков</a>
       <a class="useful-about-us" href="">О производстве</a>
       <a class="useful-about-us" href="">Наши документы</a>
       <a class="useful-about-us" href="">Экологические стандарты</a>

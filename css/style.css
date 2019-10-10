@@ -11,46 +11,62 @@ body {
   background-color: #849D8F;
 }
 
-.main-menu,
-.sub-menu {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 18px;
-  color: #ffffff;
+.main-menu {
   list-style: none;
 }
 
 .nav-main-menu {
   color: #ffffff;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .nav-main-menu:link {
-  color: #ffffff;
-  border-bottom: 1px solid;
-  border-bottom-color: rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .nav-main-menu:hover,
 .nav-main-menu:focus {
-  background-color: #EDEDED;
+  background-color: #f7f6f3;
+  color: #323232;
+}
+
+.nav-sub-menu span {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #323232;
+}
+
+.sub-menu {
+  list-style: none;
   color: #323232;
 }
 
 .nav-sub-menu {
-  color: #2E2E2E;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
   text-decoration: none;
+  color: #323232;
 }
 
 .nav-sub-menu:hover,
 .nav-sub-menu:focus {
-  background-color: #FFE5E0;
-  color: #2E2E2E;
+  background-color: #fbded7;
+  color: #323232;
 }
 
 .nav-sub-menu:active {
-  background-color: #EA7056;
-  color: #2E2E2E;
+  background-color: #f6b5a5;
+  color: #323232;
+}
+
+.current {
+  background-color: #d07058;
+  color: #ffffff;
 }
 
 .button-search,
@@ -67,6 +83,16 @@ body {
   line-height: 32px;
 }
 
+.daily {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.phone {
+  font-weight: bold;
+  font-size: 22px;
+}
+
 .cream-index a {
   font-weight: bold;
   font-size: 32px;
@@ -77,24 +103,10 @@ body {
 .cream-index h2 {
   font-weight: bold;
   font-size: 60px;
-  line-height: 60.35px;
+  line-height: 60px;
   color: #ffffff;
 }
 
-.cream-index a {
-  background-color: #FF633D;
-}
-
-.cream-index a:hover,
-.cream-index a:focus {
-  background-color: #FF7B62;
-  color: #ffffff;
-}
-
-.cream-index a:active {
-  background-color: #FB5133;
-  color: #ffffff;
-}
 
 .gift a {
     background-color: #FF633D;
@@ -131,27 +143,45 @@ body {
 }
 
 .button-red {
-  background-color: #FD5535;
+  width: 280px;
+  height: 65px;
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+
+
   font-weight: bold;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 32px;
+  line-height: 31px;
   color: #ffffff;
+  text-align: center;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   text-decoration: none;
+
 }
 
 .button-red:hover,
 .button-red:focus {
-  background-color: #FF7B62;
-  color: #ffffff;
+  box-shadow: 0px 2px 2px 0 #ac1000;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(to top, #74a35, #f26843);
 }
 
 .button-red:active {
-  background-color: #FD5535;
+  box-shadow: inset 0px 2px 2px 0 #942718;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(to bottom, #74a35, #f26843);
+}
+
+.button-gift {
+  width: 165px;
+  height: 45px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
   color: #ffffff;
 }
 
 .catalog-item a {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
@@ -159,15 +189,14 @@ body {
 }
 
 .catalog-item a:link {
-color: #ffffff;
-border-bottom: 1px solid;
-border-bottom-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .catalog-item a:hover,
 .catalog-item a:focus,
 .catalog-item a:active {
-  color: #FFCCB4;
+  color: #ffbc9e;
   border-bottom-color: rgba(255, 189, 158, 0.2);
 }
 
@@ -177,14 +206,19 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
   border-radius: 155px;
 }
 
-.catalog-item p {
+.price {
   font-weight: bold;
   font-size: 45px;
   line-height: 45px;
 }
 
+.catalog-item span {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+}
+
 .block-advantages {
-  background-color: #849D8F;
   background-image: url("../img/waffle-pattern.jpg");
   background-repeat: repeat;
   width: 1150px;
@@ -201,30 +235,28 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
 
 .list-of-benefits {
   list-style: none;
-  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
 }
 
 .news-block {
-  color: #2E2E2E;
-  background-color: #849D8F;
+  color: #323232;
   background-image: url("../img/strawberry-background.jpg");
   background-repeat: no-repeat;
   width: 560px;
   height: 230px;
   border-radius: 15px;
+  background-position: -70px -200px;
 }
 
 .news-block h2 {
-  color: #2E2E2E;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
 }
 
 .news-block a {
-  color: #2E2E2E;
+  color: #323232;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -233,13 +265,12 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
 .news-block a:hover,
 .news-block a:focus,
 .news-block a:active {
-  color: #FF4C33;
+  color: #ffbc9e;
 }
 
 .email-block {
-  color: #5F5F5F;
-  font-weight: 500;
-  background-color: #849D8F;
+  color: #323232;
+  font-weight: normal;
   background-image: url("../img/bg-post.svg");
   background-repeat: no-repeat;
   width: 560px;
@@ -248,24 +279,11 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 
 .email-block p {
-  color: #5F5F5F;
-  font-weight: 500;
+  color: #323232;
+  font-weight: normal;
   font-size: 16px;
   line-height: 22px;
 }
-
-
-/*
-.map-adress{
-  color: #323232;
-  background-color: #FFFFFE;
-  background-image: url("../img/substrate.jpg");
-  background-repeat: no-repeat;
-  width: 302px;
-  height: 305px;
-  border-radius: 15px;
-}
-*/
 
 .footer-social {
   text-align: left;
@@ -283,18 +301,21 @@ border-bottom-color: rgba(255, 255, 255, 0.2);
   color: #ffffff;
 }
 
-.useful-suppliers {
-  font: inherit;
-  font-weight: bold;
+.useful-about-us {
+  font-weight: normal;
   font-size: 13px;
   line-height: 18px;
+  text-decoration: none;
 }
 
-.useful-about-us {
-  font: inherit;
-  font-weight: 500;
+.useful-about-us:link {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.suppliers {
+  font-weight: bold;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 18px;  
 }
 
 .answer {
