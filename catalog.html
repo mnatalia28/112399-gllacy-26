@@ -12,12 +12,12 @@
 <body>
   <header>
     <nav class="main-navigation">
-      <a>
+      <a href="index.html">
         <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
       </a>
 
       <ul class="main-menu">
-        <li><a class="nav-main-menu">Каталог</a>
+        <li><a class="nav-main-menu" href="">Каталог</a>
           <ul class="sub-menu">
             <li><a class="nav-sub-menu" href="#1"><span>Новинки</span></a></li>
             <li><a class="nav-sub-menu current" href="catalog.html">Сливочное</a></li>
@@ -84,7 +84,7 @@
   </header>
 
   <main>
-    <h1>Сливочное мороженое</h1>
+    <h1 class="creamy-main">Сливочное мороженое</h1>
     <div class="breadcrumbs">
       <a href="index.html">Главная</a>
       <a href="catalog.html">Каталог</a>
@@ -93,7 +93,7 @@
 
     <form class="panel-sort-filter" action="https://echo.htmlacademy.ru" method="get">
       <div class="sort-section">
-        <p>Сортировка:</p>
+        <p class="form-filter">Сортировка:</p>
         <select name="sorting">
           <option value="по популярности">по популярности</option>
           <option value="сначала недорогие">сначала недорогие</option>
@@ -108,7 +108,7 @@
       </div>
 
       <div class="fat-product-section">
-        <p>Жирность</p>
+        <p class="form-filter">Жирность</p>
         <input type="radio" id="fat0" name="fat-content" value="0%">
         <label for="fat0">0%</label>
 
@@ -123,7 +123,7 @@
       </div>
 
       <div class="fillers-section">
-        <p>Наполнители:</p>
+        <p class="form-filter">Наполнители:</p>
         <input type="checkbox" name="chocolate" id="chocolate-supplement" value="шоколадные" checked>
         <label for="chocolate-supplement">шоколадные</label>
 

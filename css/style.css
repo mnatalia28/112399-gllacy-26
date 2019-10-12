@@ -93,6 +93,18 @@ body {
   font-size: 22px;
 }
 
+.creamy-main {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.form-filter {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .cream-index a {
   font-weight: bold;
   font-size: 32px;
@@ -210,6 +222,7 @@ body {
   font-weight: bold;
   font-size: 45px;
   line-height: 45px;
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 
 .catalog-item span {
@@ -279,7 +292,7 @@ body {
 }
 
 .email-block p {
-  color: #323232;
+  color: #5a5a5a;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -315,7 +328,7 @@ body {
 .suppliers {
   font-weight: bold;
   font-size: 13px;
-  line-height: 18px;  
+  line-height: 18px;
 }
 
 .answer {
