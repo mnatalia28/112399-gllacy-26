@@ -33,45 +33,45 @@
       <div class="search">
         <button type="button" class="button-search">Поиск</button>
         <form action="https://echo.htmlacademy.ru" method="get" class="form-search">
-          <input type="search" name="search" id="search">
+          <input type="search" name="search" id="search" placeholder="Крем-брюле" class="search-input">
           <input type="submit" value="Отправить" class="visually-hidden">
         </form>
       </div>
 
       <div class="entrance">
         <p><a href="login.html" class="login-entrance">Вход</a></p>
-        <h2>Личный кабинет</h2>
+        <h2 class="visually-hidden">Личный кабинет</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <p><input type="email" name="email" placeholder="Электронная почта" required></p>
-          <p><input type="password" name="password" placeholder="Пароль" required></p>
-          <button type="submit" class="button-entrance">Войти</button>
-          <p>
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-          </p>
+          <p><input type="email" name="email" placeholder="email@example.com" required class="input-email"></p>
+          <p><input type="password" name="password" placeholder="••••••••" required class="input-password"></p>
+          <button type="submit" class="button-red button-gift">Войти</button>
+          <div class="password-registration">
+            <p><a href="#">Забыли пароль?</a></p>
+            <p><a href="#">Новая регистрация</a></p>
+          </div>
         </form>
       </div>
 
       <div class="basket">
-        <button type="button">2 товара</button>
+        <button type="button" class="basket-button">2 товара</button>
         <form action="https://echo.htmlacademy.ru" method="post">
           <div class="items-basket">
             <div class="ice-cream-basket">
               <button type="button">Закрыть</button>
-              <a href=""><img src="img/basket-ice-cream-with-jam.jpg" alt="Пломбир с апельсиновым джемом">Пломбир с апельсиновым джемом</a>
-              <p>1,5 кг х 200 руб.</p>
-              <p>300 руб.</p>
+              <a href=""><img src="img/basket-ice-cream-with-jam.jpg" alt="Пломбир с апельсиновым джемом" class="small-round">Пломбир с апельсиновым джемом</a>
+              <p class="basket-price">1,5 кг х<span>200 руб.</span></p>
+              <p class="basket-price">300 руб.</p>
             </div>
 
             <div class="strawberry-basket">
               <button type="button">Закрыть</button>
-              <a href=""><img src="img/basket-strawberry.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада">Клубничный пломбир с присыпкой из белого шоколада</a>
-              <p>1,5 кг х 300 руб.</p>
-              <p>450 руб.</p>
+              <a href=""><img src="img/basket-strawberry.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" class="small-round">Клубничный пломбир с присыпкой из белого шоколада</a>
+              <p class="basket-price">1,5 кг х<span>300 руб.</span></p>
+              <p class="basket-price">450 руб.</p>
             </div>
 
             <div class="total-amount"><span>Итого: 750 руб.</span></div>
-            <input type="submit" value="Оформить заказ">
+            <input type="submit" value="Оформить заказ" class="button-red button-gift">
           </div>
         </form>
       </div>
@@ -94,11 +94,11 @@
     <form class="panel-sort-filter" action="https://echo.htmlacademy.ru" method="get">
       <div class="sort-section">
         <p class="form-filter">Сортировка:</p>
-        <select name="sorting">
-          <option value="по популярности">по популярности</option>
-          <option value="сначала недорогие">сначала недорогие</option>
-          <option value="сначала дорогие">сначала дорогие</option>
-          <option value="по жирности">по жирности</option>
+        <select name="sorting-sel">
+          <option value="по популярности" class="popularity sorting">по популярности</option>
+          <option value="сначала недорогие" class="inexpensive sorting">сначала недорогие</option>
+          <option value="сначала дорогие" class="expensive sorting">сначала дорогие</option>
+          <option value="по жирности" class="fat-content sorting">по жирности</option>
         </select>
       </div>
 
@@ -110,38 +110,38 @@
       <div class="fat-product-section">
         <p class="form-filter">Жирность</p>
         <input type="radio" id="fat0" name="fat-content" value="0%">
-        <label for="fat0">0%</label>
+        <label for="fat0" class="sorting">0%</label>
 
         <input type="radio" id="fat-before-10" name="fat-content" value="до 10%" checked>
-        <label for="fat-before-10">до 10%</label>
+        <label for="fat-before-10" class="sorting">до 10%</label>
 
         <input type="radio" id="fat-before-30" name="fat-content" value="до 30%">
-        <label for="fat-before-30">до 30%</label>
+        <label for="fat-before-30" class="sorting">до 30%</label>
 
         <input type="radio" id="fat-before-above30" name="fat-content" value="выше 30%">
-        <label for="fat-before-above30">выше 30%</label>
+        <label for="fat-before-above30" class="sorting">выше 30%</label>
       </div>
 
       <div class="fillers-section">
         <p class="form-filter">Наполнители:</p>
         <input type="checkbox" name="chocolate" id="chocolate-supplement" value="шоколадные" checked>
-        <label for="chocolate-supplement">шоколадные</label>
+        <label for="chocolate-supplement" class="sorting">шоколадные</label>
 
         <input type="checkbox" name="sugar-powders" id="sugar-supplement" value="сахарные присыпки" checked>
-        <label for="sugar-supplement">сахарные присыпки</label>
+        <label for="sugar-supplement" class="sorting">сахарные присыпки</label>
 
         <input type="checkbox" name="fruits" id="fruits-supplement" value="фрукты">
-        <label for="fruits-supplement">фрукты</label>
+        <label for="fruits-supplement" class="sorting">фрукты</label>
 
         <input type="checkbox" name="syrups" id="syrups-supplement" value="сиропы">
-        <label for="syrups-supplement">сиропы</label>
+        <label for="syrups-supplement" class="sorting">сиропы</label>
 
         <input type="checkbox" name="jams" id="jams-supplement" value="джемы">
-        <label for="jams-supplement">сиропы</label>
+        <label for="jams-supplement" class="sorting">сиропы</label>
       </div>
 
       <div class="apply-selected">
-        <input type="submit" value="Применить">
+        <input type="submit" value="Применить" class="sorting apply">
       </div>
     </form>
 

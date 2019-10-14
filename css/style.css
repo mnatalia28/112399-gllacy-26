@@ -72,15 +72,76 @@ body {
 .button-search,
 .login-entrance,
 .button-basket  {
-  background-color: #9AB5AA;
   color: #ffffff;
-}
-
-.login-entrance,
-.button-basket  {
   font-weight: 500;
   font-size: 14px;
-  line-height: 32px;
+  line-height: 16px;
+}
+
+.login-entrance {
+  text-decoration: none;
+}
+
+.search-input,
+.input-email,
+.nput-password {
+  color: #999999;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.password-registration a {
+  color: #323232;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.button-entrance {
+  color: #fefefe;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.basket-button {
+  color: #323232;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.small-round {
+  width: 33px;
+  height: 33px;
+  border-radius: 155px;
+}
+
+.items-basket a {
+  text-decoration: none;
+  color: #323232;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.basket-price {
+  color: #323232;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.basket-price span {
+
+}
+
+.total-amount span {
+  color: #323232;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
 }
 
 .daily {
@@ -93,16 +154,43 @@ body {
   font-size: 22px;
 }
 
+.breadcrumbs a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.breadcrumbs a:link {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.breadcrumbs span {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .creamy-main {
   font-weight: bold;
   font-size: 35px;
   line-height: 41px;
 }
 
-.form-filter {
+.form-filter,
+.range-price-section {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+}
+
+.sorting {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .cream-index a {
@@ -231,6 +319,13 @@ body {
   line-height: 45px;
 }
 
+.paginator a{
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
 .block-advantages {
   background-image: url("../img/waffle-pattern.jpg");
   background-repeat: repeat;
@@ -296,6 +391,22 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+}
+
+.adress-main-office,
+.adress-for-orders {
+  color: #323232;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.adress-street,
+.adress-fhone {
+  color: #323232;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .footer-social {
