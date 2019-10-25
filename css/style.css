@@ -34,6 +34,10 @@ body {
   list-style: none;
 }
 
+.dropbox {
+  display: none;
+}
+
 .nav-main-menu {
   color: #ffffff;
   text-decoration: none;
@@ -159,6 +163,23 @@ body {
 
 .basket-price span {
   color: #999999;
+}
+
+.main-header-logo {
+  padding-right: 22px;
+}
+
+.main-navigation-wrapper {
+  display: flex;
+}
+
+.user-block {
+  margin: 0;
+  padding: 0;
+}
+
+.user-block {
+  display: flex;
 }
 
 .total-amount span {
@@ -328,8 +349,14 @@ body {
 }
 
 .catalog-item {
+  min-height: 325px;
   width: 267px;
   margin-right: 26px;
+  text-align: center;
+}
+
+.price {
+  text-align: left;
 }
 
 .catalog-item:nth-child(4n) {

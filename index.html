@@ -12,51 +12,64 @@
 <body>
   <header class="container">
     <nav class="main-navigation">
-      <a class="active main-header-logo" href="">
-        <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
-      </a>
+      
+      <div class="main-navigation-wrapper">
+        <a class="active main-header-logo" href="">
+          <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
+        </a>
 
-      <ul class="main-menu">
-        <li><a class="nav-main-menu" href="">Каталог</a>
-          <ul class="sub-menu">
-            <li><a class="nav-sub-menu" href="#1"><span>Новинки</span></a></li>
-            <li><a class="nav-sub-menu" href="catalog.html">Сливочное</a></li>
-            <li><a class="nav-sub-menu" href="#3">Щербеты</a></li>
-            <li><a class="nav-sub-menu" href="#4">Фруктовый лед</a></li>
-            <li><a class="nav-sub-menu" href="#5">Мелорин</a></li>
-          </ul>
-        </li>
-        <li><a class="nav-main-menu" href="delivary-payment.html">Доставка и оплата</a></li>
-        <li><a class="nav-main-menu" href="about.html">О компании</a></li>
-      </ul>
+        <ul class="main-menu">
+          <li><a class="nav-main-menu" href="">Каталог</a>
+            <ul class="sub-menu dropbox">
+              <li><a class="nav-sub-menu" href="#1"><span>Новинки</span></a></li>
+              <li><a class="nav-sub-menu" href="catalog.html">Сливочное</a></li>
+              <li><a class="nav-sub-menu" href="#3">Щербеты</a></li>
+              <li><a class="nav-sub-menu" href="#4">Фруктовый лед</a></li>
+              <li><a class="nav-sub-menu" href="#5">Мелорин</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-main-menu" href="delivary-payment.html">Доставка и оплата</a></li>
+          <li><a class="nav-main-menu" href="about.html">О компании</a></li>
+        </ul>
 
-      <div class="search">
-        <button type="button" class="button-search">Поиск</button>
-        <form action="https://echo.htmlacademy.ru" method="get" class="form-search">
-          <input type="search" name="search" id="search" placeholder="Крем-брюле" class="search-input">
-          <input type="submit" value="Отправить" class="visually-hidden">
-        </form>
-      </div>
-
-      <div class="entrance">
-        <p><a href="login.html" class="login-entrance">Вход</a></p>
-        <h2 class="visually-hidden">Личный кабинет</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p><input type="email" name="email" placeholder="email@example.com" required class="input-email"></p>
-          <p><input type="password" name="password" placeholder="••••••••" required class="input-password"></p>
-          <button type="submit" class="button-red button-gift">Войти</button>
-          <div class="password-registration">
-            <p><a href="#">Забыли пароль?</a></p>
-            <p><a href="#">Новая регистрация</a></p>
+        <div class="user-block">
+          <div class="search">
+            <button type="button" class="button-search">Поиск</button>
+            <div class="dropbox">
+              <form action="https://echo.htmlacademy.ru" method="get" class="form-search">
+                <input type="search" name="search" id="search" placeholder="Крем-брюле" class="search-input">
+                <input type="submit" value="Отправить" class="visually-hidden">
+              </form>
+            </div>
           </div>
-        </form>
+
+          <div class="entrance">
+            <p><a href="login.html" class="login-entrance">Вход</a></p>
+            <div class="dropbox">
+              <h2 class="visually-hidden">Личный кабинет</h2>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <p><input type="email" name="email" placeholder="email@example.com" required class="input-email"></p>
+                <p><input type="password" name="password" placeholder="••••••••" required class="input-password"></p>
+                <button type="submit" class="button-red button-gift">Войти</button>
+                <div class="password-registration">
+                  <p><a href="#">Забыли пароль?</a></p>
+                  <p><a href="#">Новая регистрация</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="basket"><button type="button" class="button-basket">Пусто</button></div>
+        </div>
       </div>
-      <p><button type="button" class="button-basket">Пусто</button></p>
+
     </nav>
+
     <div class="daily-phone">
       <p class="daily">С 10 до 20, ежедневно</p>
       <p class="phone">8 812 450-25-25</p>
     </div>
+
   </header>
 
   <main>
@@ -208,7 +221,7 @@
         Сделано:
         <a class="made" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">HTML Academy</a>
     </div>
-  </div> 
+  </div>
   </footer>
 
   <section class="answer">
