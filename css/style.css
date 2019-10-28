@@ -11,13 +11,11 @@ html {
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
   color: #ffffff;
-
   background-color: #849D8F;
 }
 
@@ -32,6 +30,50 @@ body {
 
 .main-menu {
   list-style: none;
+  width: 355px;
+}
+
+.main-menu {
+  display: flex;
+  margin-right: 375px;
+  justify-content: space-between;
+}
+
+.user-block {
+  margin: 0;
+  padding: 0;
+  width: 245px;
+}
+
+.user-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.daily {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.phone {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 24px;
+  margin: 0px;
+}
+
+.daily-phone {
+  width: 170px;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+.daily-phone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .dropbox {
@@ -99,7 +141,7 @@ body {
 
 .button-search,
 .login-entrance,
-.button-basket  {
+.button-basket {
   color: #ffffff;
   font-weight: 500;
   font-size: 14px;
@@ -173,30 +215,11 @@ body {
   display: flex;
 }
 
-.user-block {
-  margin: 0;
-  padding: 0;
-}
-
-.user-block {
-  display: flex;
-}
-
 .total-amount span {
   color: #323232;
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
-}
-
-.daily {
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.phone {
-  font-weight: bold;
-  font-size: 22px;
 }
 
 .breadcrumbs a {
@@ -253,7 +276,7 @@ body {
 }
 
 .gift a {
-    background-color: #FF633D;
+  background-color: #FF633D;
 }
 
 .raspberry-gift {
@@ -311,8 +334,6 @@ body {
   background-color: #ffffff;
   background-image: linear-gradient(to top, #e74a35, #f26843);
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
-
-
   font-weight: bold;
   font-size: 32px;
   line-height: 31px;
@@ -320,7 +341,6 @@ body {
   text-align: center;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   text-decoration: none;
-
 }
 
 .button-red:hover,
@@ -363,7 +383,6 @@ body {
   margin-right: 0px;
 }
 
-
 .catalog-item a {
   font-weight: 500;
   font-size: 16px;
@@ -402,7 +421,7 @@ body {
   line-height: 45px;
 }
 
-.paginator a{
+.paginator a {
   color: #ffffff;
   font-weight: 500;
   font-size: 16px;
@@ -430,7 +449,6 @@ body {
   list-style: none;
   font-size: 16px;
   line-height: 22px;
-
 }
 
 .list-of-benefits li {
@@ -443,7 +461,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-
 }
 
 .news-block {
@@ -455,7 +472,6 @@ body {
   border-radius: 15px;
   background-position: -70px -200px;
   margin-right: 26px;
-
 }
 
 .news-block h2 {
@@ -519,16 +535,35 @@ body {
   line-height: 24px;
 }
 
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .footer-social {
   text-align: left;
+  margin-top: 40px;
+  padding: 0px;
+  list-style: none;
+  width: 400px;
 }
 
 .footer-social ul {
-  list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 .social-button {
   color: #ffffff;
+}
+
+.useful {
+  padding: 0px;
+  list-style: none;
+  min-height: 27px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  width: 330px; 
 }
 
 .useful a {
@@ -546,11 +581,26 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.made a {
-  color: #fefefe;
+.usefal li {
+  width: 165px;
+}
+
+.useful-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .made {
+  width: 108px;
+}
+
+.made-academy-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.made-in {
   color: #fefefe;
   font-weight: normal;
   font-size: 12px;
@@ -558,32 +608,31 @@ body {
   text-decoration: none;
 }
 
-.made:link {
+.made-academy {
+  color: #fefefe;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.made-academy:link {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.footer-social ul {
-  padding: 0px;
-  margin: 0px;
-}
-
-.footer-social {
-  width: 400px;
-}
-
-.useful {
-  width: 326px;
-  margin-right: 230px;
-}
-
 .copyright {
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+.made-academy-wrapper {
   width: 190px;
 }
 
-.footer-wrapper {
+.made-academy-wrapper {
   display: flex;
-  flex-wrap: wrap;
-
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 .suppliers {
