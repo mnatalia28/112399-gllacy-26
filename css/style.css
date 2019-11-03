@@ -19,6 +19,11 @@ body {
   background-color: #849D8F;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1200px;
   padding-left: 27px;
@@ -30,25 +35,24 @@ body {
 
 .main-menu {
   list-style: none;
-  width: 355px;
 }
 
 .main-menu {
   display: flex;
-  margin-right: 375px;
-  justify-content: space-between;
+  padding: 0px;
+  margin-right: auto;
 }
 
 .user-block {
   margin: 0;
   padding: 0;
-  width: 245px;
+
 }
 
 .user-block {
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
+  justify-content: flex-end;
 }
 
 .daily {
@@ -88,7 +92,12 @@ body {
   line-height: 18px;
 }
 
-.nav-main-menu:link {
+.nav-main-menu {
+  padding: 11px;
+  border-radius: 23px;
+}
+
+.nav-main-menu span {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -146,15 +155,37 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+  padding: 11px;
+  border-radius: 23px;
+  background: rgba(255, 255, 255, 0.2);
 }
 
-.login-entrance {
+.button-search {
+
+}
+
+.login-entrance  {
   text-decoration: none;
+}
+
+.entrance {
+}
+
+
+.button-basket,
+.login-entrance {
+  margin-left: 10px;
+  padding-left: 25px;
+}
+
+.button-search,
+.button-basket {
+  border: 0px;
 }
 
 .search-input,
 .input-email,
-.nput-password {
+.input-password {
   color: #999999;
   font-weight: normal;
   font-size: 14px;
@@ -168,14 +199,16 @@ body {
   line-height: 24px;
 }
 
+/*
 .button-entrance {
   color: #fefefe;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
 }
+*/
 
-.basket-button {
+.basket-product {
   color: #323232;
   font-weight: 500;
   font-size: 14px;
@@ -208,7 +241,11 @@ body {
 }
 
 .main-header-logo {
-  padding-right: 22px;
+  padding-right: 10px;
+}
+
+.main-navigation {
+  padding-top: 23px;
 }
 
 .main-navigation-wrapper {
@@ -449,6 +486,7 @@ body {
   list-style: none;
   font-size: 16px;
   line-height: 22px;
+  padding-right: 35px;
 }
 
 .list-of-benefits li {
@@ -460,7 +498,7 @@ body {
 .list-of-benefits-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .news-block {
@@ -548,13 +586,36 @@ body {
   width: 400px;
 }
 
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .footer-social ul {
   padding: 0px;
   margin: 0px;
 }
 
 .social-button {
-  color: #ffffff;
+  display: flex;
+  padding-right: 12px;
+
+  border-radius: 2px solid  rgba(255, 255, 255, 0.7);
+}
+
+.social-button path {
+  fill: rgba(255, 255, 255, 0.8);
+  border-radius: 2px solid  rgba(255, 255, 255, 0.7);
+}
+
+.social-button:hover path,
+.social-button:focus path {
+  fill: rgba(255, 255, 255, 1);
+}
+
+.social-button:active path {
+  fill: rgba(255, 255, 255, 1);
+  text-shadow: #e9e9e9;
 }
 
 .useful {
@@ -563,7 +624,7 @@ body {
   min-height: 27px;
   margin-top: 40px;
   margin-bottom: 15px;
-  width: 330px; 
+  width: 330px;
 }
 
 .useful a {
@@ -580,24 +641,23 @@ body {
 .useful-about-us:link {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+.useful-wrapper li {
+  width: 145px;
+}
 
-.usefal li {
-  width: 165px;
+.useful-wrapper li:nth-child(2n) {
+  width: 166px;
 }
 
 .useful-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .made {
   width: 108px;
-}
-
-.made-academy-wrapper {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .made-in {
@@ -608,7 +668,15 @@ body {
   text-decoration: none;
 }
 
-.made-academy {
+.copyright {
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+.made-academy-wrapper {
+  width: 200px;
+  text-align: right;
+  margin: 0px;
   color: #fefefe;
   font-weight: normal;
   font-size: 12px;
@@ -616,23 +684,13 @@ body {
   text-decoration: none;
 }
 
+.made-academy {
+  color: #fefefe;
+  text-decoration: none;
+}
+
 .made-academy:link {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.copyright {
-  margin-top: 20px;
-  margin-left: auto;
-}
-
-.made-academy-wrapper {
-  width: 190px;
-}
-
-.made-academy-wrapper {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
 }
 
 .suppliers {
